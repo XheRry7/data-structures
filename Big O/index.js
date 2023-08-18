@@ -180,3 +180,22 @@ function foo(n) {
 foo(6);
 // space complexity of the above code is O(n) because we are assigning the arr foo for every iteration of loop
 
+// O(log N)
+// # of nodes = 2^h -1 where h is the height of the tree which starts from 1.
+// log nodes = steps
+// log 100 = 2
+/*
+The most common attributes of logarithmic running-time function are that:
+the choice of the next element on which to perform some action is one of several possibilities, and
+only one will need to be chosen.
+
+for example, looking up people in a phone book is O(log n). You don't need to check 
+every person in the phone book to find the right one; instead, you can simply
+ divide-and-conquer by looking based on where their name is alphabetically, and 
+ in every section you only need to explore a subset of each section before you
+  eventually find someone's phone number.
+
+Of course, a bigger phone book will still take you a longer time, but it won't grow 
+as quickly as the proportional increase in the additional size.
+
+*/
