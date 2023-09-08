@@ -129,3 +129,26 @@ function traverse(node) {
   tree.right = node.right === null ? null : traverse(node.right);
   return tree;
 }
+
+// AVL trees: In an AVL tree, the difference in height between the left and right subtrees of a node cannot be more than one.
+// This difference is called the balance factor. If the difference is more than one, the tree is rebalanced.
+
+// // Red-Black Trees: Red-black trees are a type of binary search tree where each node is colored either red or black. The colors are used to maintain balance during insertion and deletion operations. The properties of a red-black tree are: 
+// Every node is colored red or black.
+// The root node is always black.
+// Every path from the root to a leaf must have the same number of black nodes.
+// No two red nodes can be adjacent.
+// If a node is red, then both its children are black.
+
+/// *** Binary Heap: ***
+// Max heap is the heap in this root node is always greater than the child nodes at every level.
+// Min Heap is the heap in which root node is always smaller than the child nodes.
+// In binary heap left and right values can be anything less than the root node value. Smaller value can be placed on the right side as well.
+//  therefore it's complexity is O(n).
+// Heaps are mostly used in data storage, priority queues, Sorting algos.
+
+// Priority Queues: It is a type of element in which each type of data has some priority and elements with high priorities are served 
+// before the elements with the lower priorities.
+
+// Trie: Is used in the scenario when we search for a word. like when we search a world in google and it automatically suggests us words 
+// starting from that word.Used in Adding suggestions in search engine
